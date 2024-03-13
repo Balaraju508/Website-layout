@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Webpage layout</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        
+    }
+    header{
+        background-color: hsl(0, 0%, 86%);
+        padding: 25px;
+        font-family: cursive;
+    }
+    .navbar{
+        background-color: hsl(0, 0%, 15%);
+        height: 50px;
+    }
+    aside{
+        width: 20%;
+        float: left;
+        padding: 10px;
+    }
+    section{
+        width: 40%;
+        float: left;
+        padding: 10px;
+    }
+    article{
+        width: 40%;
+        float: left;
+        padding: 10px;
+    }
+    footer{
+        display: block;
+        clear: both;
+        background-color: hsl(0, 0%, 86%);
+        padding: 25px;
+
+    }
+    footer a{
+        text-decoration: none;
+        padding: 20px ;
+    }
+    @media screen and (max-width:600px){
+        aside, section, article{
+            width: 100%;
+        }
+    }
+    #one{
+        width: 80px;
+        height: 100px;
+        mix-blend-mode: color-burn;
+    }
+    ul{
+        list-style: none;
+    }
+    ul li{
+        display: inline-block;
+    }
+    ul li a{
+        text-decoration: none;
+        padding: 20px;
+        line-height: 50px;
+    }
+    ul li a:hover{
+        background-color: white;
+        color: black;
+    }
+    img{
+        height: 125px;
+        border-radius: 100px;
+    }
+    </style>
+</head> 
+<body>
+    <header>
+        <h1><img id="one" src="https://img.freepik.com/premium-vector/cake-icon-logo-design_586739-172.jpg?w=740">  Cakeshop</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Types</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h2>Black forest</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRe502jnCuTUJTM5AQ5IJYyZlfEeBoYYtwZA&usqp=CAU" >
+        </aside>
+        <section>
+            <h2>Description</h2>
+            <p>A Swedish cake called Schwarzwaldtårta is related to the traditional Black Forest gâteau only by name. It consists of layers of meringue containing finely ground roasted hazelnuts covered by a thin layer of chocolate with whipped cream in between. The whole cake is also covered with whipped cream and decorated with thin dark chocolate and cocoa powder.</p>
+        </section>
+        <article>
+            <h2>This is an Article</h2>
+            <p>Black Forest gâteau (German: Schwarzwälder Kirschtorte (pronounced [ˈʃvaʁt͡svɛldɐ ˈkɪʁʃˌtɔʁtə]), literally "Black Forest Cherry-torte"), also called Black Forest cake (North American English), is a German chocolate and cream cake with a rich cherry filling. While it is most likely based on a Black Forest dessert tradition, the cake's specific origin in Germany is contested.
+
+                Typically, Black Forest gateau consists of several layers of chocolate sponge cake sandwiched with whipped cream and cherries. It is decorated with additional whipped cream, maraschino cherries, and chocolate shavings. In some European traditions, sour cherries are used both between the layers and for decorating the top.[2] Traditionally the alcoholic Kirschwasser, a clear spirit made from sour cherries, is added to the cake.[3] Other spirits are sometimes used, such as rum, which is common in Austrian recipes. German law mandates that any dessert labeled Schwarzwälder Kirschtorte must have Kirschwasser.</p>
+        </article>
+    </main>
+    <footer>
+        <a href="#">Contact us</a><br>
+        <a href="#">Instagram</a><br>
+        <a href="#">Facebook</a><br>
+        <a href="#">Whatsapp</a><br>
+    </footer>
+</body>
+</html>
